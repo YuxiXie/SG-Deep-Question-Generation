@@ -36,7 +36,7 @@ We release both classifier and generator models in this work. The models are con
 
 ## Translating / Testing
 
-* run [`scripts/translate.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/translate.sh) to get the prediction file on the validation dataset
+* run [`scripts/translate.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/translate.sh) to get the prediction on the validation dataset
 
 ## Citation
 ```
