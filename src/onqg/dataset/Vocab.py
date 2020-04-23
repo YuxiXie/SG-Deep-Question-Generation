@@ -3,7 +3,7 @@ import functools
 
 import onqg.dataset.Constants as Constants
 
-from pytorch_pretrained_bert import BertTokenizer, GPT2Tokenizer
+# from pytorch_pretrained_bert import BertTokenizer, GPT2Tokenizer
 
 
 def build_vocab(pretrained):    

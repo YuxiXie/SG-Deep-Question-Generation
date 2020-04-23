@@ -5,8 +5,8 @@ import torch.nn as nn
 import argparse
 from tqdm import tqdm
 
-from onqg.utils.translate.Translator import Translator
-from onqg.dataset.Dataset import Dataset
+from onqg.utils.translate import Translator
+from onqg.dataset import Dataset
 from onqg.utils.model_builder import build_model
 
 

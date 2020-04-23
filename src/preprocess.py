@@ -7,8 +7,8 @@ from tqdm import tqdm
 
 import pargs
 import onqg.dataset.Constants as Constants
-from onqg.dataset.Vocab import Vocab
-from onqg.dataset.Dataset import Dataset
+from onqg.dataset import Vocab
+from onqg.dataset import Dataset
 
 
 json_load = lambda x: json.load(codecs.open(x, 'r', encoding='utf-8'))
