@@ -17,7 +17,7 @@ python train.py \
        -graph_data ${DATAHOME}/preprcessed_graph_data.pt \
        -train_dataset ${DATAHOME}/Dataset/train_dataset.pt \
        -valid_dataset ${DATAHOME}/Dataset/valid_dataset.pt \
-       -checkpoint ${MODELHOME}/classifier/classifier_84.32607_accuracy.chkpt \
+       -checkpoint ${MODELHOME}/classifier/classifier_84.06773_accuracy.chkpt \
        -epoch 100 \
        -batch_size 32 -eval_batch_size 16 \
        -pre_trained_vocab \
