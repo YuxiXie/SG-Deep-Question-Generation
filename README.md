@@ -6,6 +6,15 @@ This repository contains code and models for the paper: [Semantic Graphs for Gen
 
 ## Requirements
 
+#### Environment
+
+```
+pytorch 1.4.0
+nltk 3.4.4
+numpy 1.18.1
+tqdm 4.32.2
+```
+
 #### Data Preprocessing
 
 We release [all the datasets below](https://drive.google.com/open?id=1vj2pWYZ7s08f4qP8vHAd3FEHnYa_CTnn) which are processed based on [HotpotQA](https://hotpotqa.github.io/). 
