@@ -26,7 +26,7 @@ We release both classifier and generator models in this work. The models are con
 
 * run `scripts/train_classifier.sh` to train on the ***Content Selection*** task
 
-* run `scripts/train_generator.sh` to train on the ***Content Selection*** task, the default one is finetuning based on the pretrained classifier
+* run `scripts/train_generator.sh` to train on the ***Question Generation*** task, the default one is finetuning based on the pretrained classifier
 
 #### Translating / Testing
 
