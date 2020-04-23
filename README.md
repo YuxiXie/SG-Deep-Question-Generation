@@ -12,7 +12,7 @@ We release all the datasets below which are processed based on [HotpotQA](https:
 
 2. prepare the json files ready as illustrated in `build-semantic-graphs`
 
-3. run `scripts/preprocess_data.sh` to get the preprocessed data ready for training
+3. run [`scripts/preprocess_data.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/preprocess_data.sh) to get the preprocessed data ready for training
 
 #### Models
 
