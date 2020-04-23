@@ -6,9 +6,9 @@ This repository contains code and models for the paper: [Semantic Graphs for Gen
 
 #### Data Preprocessing
 
-We release all the datasets below which are processed based on [HotpotQA](https://hotpotqa.github.io/).
+We release all the datasets below which are processed based on [HotpotQA](https://hotpotqa.github.io/). 
 
-1. get tokenized data files of `documents`, `questions`, `answers`, and the results of ***Dependency Parsing*** and ***Coreference Resolution***
+1. get tokenized data files of `documents`, `questions`, `answers`, and the results of ***Dependency Parsing*** and ***Coreference Resolution*** on `documents`
 
 2. prepare the json files ready as illustrated in [`build-semantic-graphs`](https://github.com/YuxiXie/SG-Deep-Question-Generation/tree/master/build-semantic-graphs)
 
