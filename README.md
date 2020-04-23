@@ -22,17 +22,17 @@ We release both classifier and generator models in this work. The models are con
 
 * [generator](): BLeU-4 - 15.12441
 
-#### Training
+## Training
 
 * run `scripts/train_classifier.sh` to train on the ***Content Selection*** task
 
 * run `scripts/train_generator.sh` to train on the ***Question Generation*** task, the default one is finetuning based on the pretrained classifier
 
-#### Translating / Testing
+## Translating / Testing
 
 * run `scripts/translate.sh` to get the prediction file on the validation dataset
 
-#### Citation
+## Citation
 ```
     @article{pan2019sgdqg,
       title={Semantic Graphs for Generating Deep Questions},
