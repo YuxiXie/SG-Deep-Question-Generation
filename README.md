@@ -6,6 +6,15 @@ This repository contains code and models for the paper: [Semantic Graphs for Gen
 
 ## Requirements
 
+#### Environment
+
+```
+pytorch 1.4.0
+nltk 3.4.4
+numpy 1.18.1
+tqdm 4.32.2
+```
+
 #### Data Preprocessing
 
 We release [all the datasets below](https://drive.google.com/open?id=1vj2pWYZ7s08f4qP8vHAd3FEHnYa_CTnn) which are processed based on [HotpotQA](https://hotpotqa.github.io/). 
@@ -21,6 +30,8 @@ We release [all the datasets below](https://drive.google.com/open?id=1vj2pWYZ7s0
 3. run [`scripts/preprocess_data.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/preprocess_data.sh) to get the preprocessed data ready for training
 
 	* get results in folder [`preprcessed-data`](https://drive.google.com/open?id=1hRAp40yABTq8ZMk1iVq74iOq4sZ7HPZq) and folder [`Datasets`](https://drive.google.com/open?id=1rlLq4f_T7vGpIzhF4a9cwQlygxmwF7Zv)
+	
+	* utilize `glove.840B.300d.txt` from [GloVe](https://nlp.stanford.edu/projects/glove/) to initialize the word-embeddings
 
 #### Models
 
