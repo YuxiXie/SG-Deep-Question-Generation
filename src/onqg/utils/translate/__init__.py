@@ -1,0 +1,1 @@
+from onqg.utils.translate.Translator import Translator

@@ -17,8 +17,8 @@ from onqg.dataset.Dataset import Dataset
 from onqg.utils.model_builder import build_model
 from onqg.utils.train.Loss import NLLLoss
 from onqg.utils.train.Optim import Optimizer
-from onqg.utils.train.Train import SupervisedTrainer
-from onqg.utils.translate.Translator import Translator
+from onqg.utils.train import SupervisedTrainer
+from onqg.utils.translate import Translator
 
 
 def main(opt, logger):

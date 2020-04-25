@@ -4,7 +4,7 @@ set -x
 
 DATAHOME=${HOME}/datasets
 EXEHOME=${HOME}/src
-MODELHOME=${HOME}/models/classifier
+MODELHOME=${HOME}/models
 LOGHOME=${HOME}/logs
 
 mkdir -p ${MODELHOME}
@@ -13,10 +13,10 @@ mkdir -p ${LOGHOME}
 cd ${EXEHOME}
 
 python train.py \
-       -sequence_data ${DATAHOME}/preprcessed_sequence_data.pt \
-       -graph_data ${DATAHOME}/preprcessed_graph_data.pt \
-       -train_dataset ${DATAHOME}/Dataset/train_dataset.pt \
-       -valid_dataset ${DATAHOME}/Dataset/valid_dataset.pt \
+       -sequence_data ${DATAHOME}/preprcessed-data/preprcessed_sequence_data.pt \
+       -graph_data ${DATAHOME}/preprcessed-data/preprcessed_graph_data.pt \
+       -train_dataset ${DATAHOME}/Datasets/train_dataset.pt \
+       -valid_dataset ${DATAHOME}/Datasets/valid_dataset.pt \
        -epoch 100 \
        -batch_size 32 -eval_batch_size 16 \
        -pre_trained_vocab \
