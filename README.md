@@ -1,6 +1,6 @@
 # Semantic Graphs for Generating Deep Questions
 
-This repository contains code and models for the paper: [Semantic Graphs for Generating Deep Questions (ACL 2020)](). Below is the framework of our proposed model (on the right) together with an input example (on the left).
+This repository contains code and models for the paper: [Semantic Graphs for Generating Deep Questions (ACL 2020)](https://arxiv.org/abs/2004.12704). Below is the framework of our proposed model (on the right) together with an input example (on the left).
 
 ![Model Framework](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/model.jpg)
 
@@ -53,10 +53,10 @@ We release both classifier and generator models in this work. The models are con
 
 ## Citation
 ```
-    @article{pan2019sgdqg,
-      title={Semantic Graphs for Generating Deep Questions},
-      author={Liangming Pan and Yuxi Xie and Yansong Feng and Tat-Seng Chua and Min-Yen Kan},
-      journal={ACL 2020},
-      year={2020}
+    @inproceedings{pan-etal-2020-DQG,
+      title = {Semantic Graphs for Generating Deep Questions},
+      author = {Pan, Liangming and Xie, Yuxi and Feng, Yansong and Chua, Tat-Seng and Kan, Min-Yen},
+      booktitle = {Proceedings of Annual Meeting of the Association for Computational Linguistics (ACL)},
+      year = {2020}
     }
 ```
