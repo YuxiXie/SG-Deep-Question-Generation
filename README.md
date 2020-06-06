@@ -2,7 +2,7 @@
 
 This repository contains code and models for the paper: [Semantic Graphs for Generating Deep Questions (ACL 2020)](https://arxiv.org/abs/2004.12704). Below is the framework of our proposed model (on the right) together with an input example (on the left).
 
-![Model Framework](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/model.jpg)
+![Model Framework](model.jpg)
 
 ## Requirements
 
