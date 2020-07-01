@@ -1,6 +1,6 @@
 # Semantic Graphs for Generating Deep Questions
 
-This repository contains code and models for the paper: [Semantic Graphs for Generating Deep Questions (ACL 2020)](https://arxiv.org/abs/2004.12704). Below is the framework of our proposed model (on the right) together with an input example (on the left).
+This repository contains code and models for the paper: [Semantic Graphs for Generating Deep Questions (ACL 2020)](https://www.aclweb.org/anthology/2020.acl-main.135/). Below is the framework of our proposed model (on the right) together with an input example (on the left).
 
 ![Model Framework](model.jpg)
 
