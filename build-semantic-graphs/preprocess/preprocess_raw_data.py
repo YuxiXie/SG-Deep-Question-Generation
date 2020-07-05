@@ -67,7 +67,7 @@ def extract(data):
 
 
 def overlap(corpus):
-    train, dev = [], []
+    train, valid = [], []
     questions, sources = [], []
     for sample in tqdm(corpus['train'], desc='   - (Deal with overlapping) -   '):
         if sample['question'] not in questions:
@@ -77,16 +77,16 @@ def overlap(corpus):
                 sources.append('\t'.join(['\t'.join(sent['text']) for sent in sample['evidence']]))
             except:
                 import ipdb; ipdb.set_trace()
-    for sample in tqdm(corpus['dev'], desc='   - (Deal with overlapping) -   '):
+    for sample in tqdm(corpus['valid'], desc='   - (Deal with overlapping) -   '):
         tmp = '\t'.join(['\t'.join(sent['text']) for sent in sample['evidence']])
         if tmp not in sources:
-            dev.append(sample)
-    print(len(train), len(dev))
-    return {'train':train, 'dev':dev}
+            valid.append(sample)
+    print(len(train), len(valid))
+    return {'train':train, 'valid':valid}
 
 
-def process(train, dev):
-    corpus = {'train':extract(train), 'dev':extract(dev)}
+def process(train, valid):
+    corpus = {'train':extract(train), 'valid':extract(valid)}
     corpus = overlap(corpus)
     return corpus
 
@@ -94,9 +94,9 @@ def process(train, dev):
 if __name__ == '__main__':
     ##=== load raw HotpotQA dataset ===##
     train = json_load(sys.argv[1])
-    dev = json_load(sys.argv[2])
+    valid = json_load(sys.argv[2])
     ##=== run processing ===##
-    corpus = process(train, dev)
-    ##=== directory for saving train & dev data ===##
+    corpus = process(train, valid)
+    ##=== directory for saving train & valid data ===##
     json_dump(corpus['train'], sys.argv[3] + 'data.train.json')
-    json_dump(corpus['dev'], sys.argv[3] + 'data.dev.json')
+    json_dump(corpus['valid'], sys.argv[3] + 'data.valid.json')

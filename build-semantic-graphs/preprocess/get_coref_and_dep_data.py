@@ -135,8 +135,8 @@ def semantic_role_labeling(raw, filename):
 
 
 if __name__ == '__main__':
-    train_data_file, dev_data_file = sys.argv[1], sys.argv[2]
-    data = json_load(train_data_file) + json_load(dev_data_file)
+    train_data_file, valid_data_file = sys.argv[1], sys.argv[2]
+    data = json_load(train_data_file) + json_load(valid_data_file)
     context = get_context(data)
     print('number of context:', len(context))
 
