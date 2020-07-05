@@ -13,14 +13,30 @@ The 3 crucial parts of this method is:
 
 To run the codes, execute the commands below:
 
-* Merge data file with the result files from **Coreference Resolution** and **Dependency Parsing**
+* Get the raw json files from [HotpotQA](https://hotpotqa.github.io/) [`training set` & `dev set(distractor)`] preprocessed
 
-```bash
-python merge.py data.json crf_rsltn.json dp.json merged_data.json
-```
+    ```bash
+    python preprocess/preprocess_raw_data.py train.json dev.json data/
+    ```
+
+* Get the results of dependency parsing and coreference resolution
+
+    ```bash
+    python preprocess/get_coref_and_dep_data.py data/data.train.json data/data.dev.json dp.json crf_rsltn.json
+    ```
+
+    Since it will take long time to get these files finished. We provide the final data of [dp.json]() and [crf_rsltn.json]().
+
+    PS: We also provide the models of dependency parsing and coreference resoluation which you could find and download [here]().
+
+* Merge data file (train or dev) with the result files from **Coreference Resolution** and **Dependency Parsing**
+
+    ```bash
+    python merge.py data.json dp.json crf_rsltn.json merged_data.json
+    ```
 
 * Build Semantic Graphs with _Question Tags_ (i.e., whether a node contains span(s) in the question) as the groundtruth of **Context Selection**
 
-```bash
-python build_semantic_graph.py merged_data.json graph_with_tags.json
-```
+    ```bash
+    python build_semantic_graph.py merged_data.json graph_with_tags.json
+    ```
