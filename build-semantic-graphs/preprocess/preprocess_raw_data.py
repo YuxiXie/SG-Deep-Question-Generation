@@ -98,5 +98,5 @@ if __name__ == '__main__':
     ##=== run processing ===##
     corpus = process(train, valid)
     ##=== directory for saving train & valid data ===##
-    json_dump(corpus['train'], sys.argv[3] + 'data.train.json')
-    json_dump(corpus['valid'], sys.argv[3] + 'data.valid.json')
+    json_dump(corpus['train'], sys.argv[3] + '.train.json')
+    json_dump(corpus['valid'], sys.argv[3] + '.valid.json')

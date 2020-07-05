@@ -16,13 +16,13 @@ To run the codes, execute the commands below:
 * Get the raw json files from [HotpotQA](https://hotpotqa.github.io/) [`training set` & `dev set(distractor)`] preprocessed
 
     ```bash
-    python preprocess/preprocess_raw_data.py train.json valid.json data/
+    python preprocess/preprocess_raw_data.py train.json valid.json data
     ```
 
 * Get the results of dependency parsing and coreference resolution
 
     ```bash
-    python preprocess/get_coref_and_dep_data.py data/data.train.json data/data.valid.json dp.json crf_rsltn.json
+    python preprocess/get_coref_and_dep_data.py data.train.json data.valid.json dp.json crf_rsltn.json
     ```
 
     Since it will take long time to get these files finished, we provide the final data --- [dp.json](https://drive.google.com/file/d/1KnZXqchvHqMZnTh_7tuE57cd934aMBIF/view?usp=sharing) and [crf_rsltn.json](https://drive.google.com/file/d/1I8xTvhkEXpiq4D25Dr7XRUIoe779Ytve/view?usp=sharing).
