@@ -22,7 +22,7 @@ tqdm 4.32.2
 
 We release [all the datasets below](https://drive.google.com/open?id=1vj2pWYZ7s08f4qP8vHAd3FEHnYa_CTnn) which are processed based on [HotpotQA](https://hotpotqa.github.io/). 
 
-1. get tokenized data files of `documents`, `questions`, `answers`, and the results of ***Dependency Parsing*** and ***Coreference Resolution*** on `documents`
+1. get tokenized data files of `documents`, `questions`, `answers`
 
 	* get results in folder [`text-data`](https://drive.google.com/open?id=11FxMXONXF4HJLzpWTaNfaAF_S5gFwklq)
 
