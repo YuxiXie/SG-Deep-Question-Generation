@@ -11,7 +11,7 @@ Also see how to run the codes in the [previous directory](https://github.com/Yux
 
 * Get the results of dependency parsing and coreference resolution
 
-    *** You need to first download the model files from [here](https://drive.google.com/drive/folders/1Q2K5pOkASsr_R7JeeEIebCHaHfYQ9XS_?usp=sharing), or you could use the latest models released from [AllenNLP](https://github.com/allenai/allennlp-models/blob/master/allennlp_models/pretrained.py).
+    *** You need to first download the model files [here](https://drive.google.com/drive/folders/1Q2K5pOkASsr_R7JeeEIebCHaHfYQ9XS_?usp=sharing), or you could use the latest models released from [AllenNLP](https://demo.allennlp.org/).
 
     ```bash
     python get_coref_and_dep_data.py data.train.json data.valid.json dp.json crf_rsltn.json

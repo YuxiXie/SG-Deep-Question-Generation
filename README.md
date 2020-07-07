@@ -9,6 +9,9 @@ This repository contains code and models for the paper: [Semantic Graphs for Gen
 #### Environment
 
 ```
+allennlp 1.0.0
+allennlp-models 1.0.0
+
 pytorch 1.4.0
 nltk 3.4.4
 numpy 1.18.1

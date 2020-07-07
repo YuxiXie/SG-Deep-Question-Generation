@@ -21,13 +21,13 @@ To run the codes, execute the commands below:
 
 * Get the results of dependency parsing and coreference resolution
 
+    *** To initialize the predictors, you need to download the models of dependency parsing and coreference resoluation [here](https://drive.google.com/drive/folders/1Q2K5pOkASsr_R7JeeEIebCHaHfYQ9XS_?usp=sharing). Or you could just use the latest models released from [AllenNLP](https://demo.allennlp.org/).
+
     ```bash
     python preprocess/get_coref_and_dep_data.py data.train.json data.valid.json dp.json crf_rsltn.json
     ```
 
     Since it will take long time to get these files finished, we provide the final data --- [dp.json](https://drive.google.com/file/d/1KnZXqchvHqMZnTh_7tuE57cd934aMBIF/view?usp=sharing) and [crf_rsltn.json](https://drive.google.com/file/d/1I8xTvhkEXpiq4D25Dr7XRUIoe779Ytve/view?usp=sharing).
-
-    PS: We also provide the models of dependency parsing and coreference resoluation which you could find and download [here](https://drive.google.com/drive/folders/1Q2K5pOkASsr_R7JeeEIebCHaHfYQ9XS_?usp=sharing).
 
 * Merge data file (train or valid) with the result files from **Coreference Resolution** and **Dependency Parsing**
 
