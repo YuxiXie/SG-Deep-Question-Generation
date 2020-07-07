@@ -60,13 +60,13 @@ We take use of the [Evaluation codes for MS COCO caption generation](https://git
 
 To install pycocoevalcap and the pycocotools dependency, run:
 
-    ```bash
+    ```
     pip install git+https://github.com/salaniz/pycocoevalcap
     ```
 
 To evaluate the results in the translated file, _e.g._ `prediction.txt`, run:
 
-    ```bash
+    ```
     python evaluate_metrics.py prediction.txt
     ```
 
