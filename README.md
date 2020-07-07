@@ -50,9 +50,25 @@ We release both classifier and generator models in this work. The models are con
 
 * run [`scripts/train_generator.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/train_generator.sh) to train on the ***Question Generation*** task, the default one is to finetune based on the pretrained classifier
 
-## Translating / Testing
+## Translating
 
 * run [`scripts/translate.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/translate.sh) to get the prediction on the validation dataset
+
+## Evaluating
+
+We take use of the [Evaluation codes for MS COCO caption generation](https://github.com/salaniz/pycocoevalcap) for evaluation on automatic metrics.
+
+To install pycocoevalcap and the pycocotools dependency, run:
+
+    ```bash
+    pip install git+https://github.com/salaniz/pycocoevalcap
+    ```
+
+To evaluate the results in the translated file, _e.g._ `prediction.txt`, run:
+
+    ```bash
+    python evaluate_metrics.py prediction.txt
+    ```
 
 ## Citation
 ```
