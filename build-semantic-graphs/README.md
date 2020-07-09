@@ -27,7 +27,7 @@ To run the codes, execute the commands below:
     python preprocess/get_coref_and_dep_data.py data.train.json data.valid.json dp.json crf_rsltn.json
     ```
 
-    Since it will take long time to get these files finished, we provide the final data --- [dp.json](https://drive.google.com/file/d/1KnZXqchvHqMZnTh_7tuE57cd934aMBIF/view?usp=sharing) and [crf_rsltn.json](https://drive.google.com/file/d/1I8xTvhkEXpiq4D25Dr7XRUIoe779Ytve/view?usp=sharing).
+    - Since it will take long time to get these files finished, we provide the final data --- [dp.json](https://drive.google.com/file/d/1KnZXqchvHqMZnTh_7tuE57cd934aMBIF/view?usp=sharing) and [crf_rsltn.json](https://drive.google.com/file/d/1I8xTvhkEXpiq4D25Dr7XRUIoe779Ytve/view?usp=sharing).
 
 * Merge data file (train or valid) with the result files from **Coreference Resolution** and **Dependency Parsing**
 

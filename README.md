@@ -58,13 +58,13 @@ We release both classifier and generator models in this work. The models are con
 
 We take use of the [Evaluation codes for MS COCO caption generation](https://github.com/salaniz/pycocoevalcap) for evaluation on automatic metrics.
 
-To install pycocoevalcap and the pycocotools dependency, run:
+  - To install pycocoevalcap and the pycocotools dependency, run:
 
 ```
 pip install git+https://github.com/salaniz/pycocoevalcap
 ```
 
-To evaluate the results in the translated file, _e.g._ `prediction.txt`, run:
+  - To evaluate the results in the translated file, _e.g._ `prediction.txt`, run:
 
 ```
 python evaluate_metrics.py prediction.txt
