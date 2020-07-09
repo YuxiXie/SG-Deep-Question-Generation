@@ -7,6 +7,7 @@ from rearrange_tree import rearrange
 from build_graph import get_graph
 from merge_graph import merge
 from tag import text_load, main
+from answer_tag import ans_tag
 
 import json
 import codecs
@@ -31,6 +32,12 @@ if __name__ == '__main__':
         graphs.append(graph)
     
     questions = text_load(sys.argv[2])
-    graphs = main(graphs, questions)
+    qu_graphs = main(graphs, questions)
 
-    json_dump(graphs, sys.argv[3])
+    answers = text_load(sys.argv[3])
+    src, final_graphs = ans_tag(answers, qu_graphs)
+
+    with open(sys.argv[4], 'w', encoding='utf-8') as f:
+        f.write('\n'.join(src) + '\n')
+
+    json_dump(final_graphs, sys.argv[5])
