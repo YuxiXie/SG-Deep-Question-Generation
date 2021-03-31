@@ -20,19 +20,19 @@ tqdm 4.32.2
 
 #### Data Preprocessing
 
-We release [all the datasets below](https://drive.google.com/open?id=1vj2pWYZ7s08f4qP8vHAd3FEHnYa_CTnn) which are processed based on [HotpotQA](https://hotpotqa.github.io/). 
+We release [all the datasets below](https://drive.google.com/drive/folders/1uPQaK-cWcbkZapmC3qROkmddC_st5uhv?usp=sharing) which are processed based on [HotpotQA](https://hotpotqa.github.io/). 
 
 1. get tokenized data files of `documents`, `questions`, `answers`
 
-	* get results in folder [`text-data`](https://drive.google.com/open?id=11FxMXONXF4HJLzpWTaNfaAF_S5gFwklq)
+	* get results in folder [`text-data`](https://drive.google.com/drive/folders/1nhBfk2EvOHGDRq6vPCf8Pk8wZFL0dqbf?usp=sharing)
 
 2. prepare the json files ready as illustrated in [`build-semantic-graphs`](https://github.com/YuxiXie/SG-Deep-Question-Generation/tree/master/build-semantic-graphs)
 
-	*  get results in folder [`json-data`](https://drive.google.com/open?id=1VHLOEcQaNdEGbyUVoGFXkdPbpR0-Lp9A)
+	*  get results in folder [`json-data`](https://drive.google.com/drive/folders/10idPzICLR_OhEZHfGnvgZcqAB1x509mE?usp=sharing)
 
 3. run [`scripts/preprocess_data.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/preprocess_data.sh) to get the preprocessed data ready for training
 
-	* get results in folder [`preprocessed-data`](https://drive.google.com/open?id=1hRAp40yABTq8ZMk1iVq74iOq4sZ7HPZq) and folder [`Datasets`](https://drive.google.com/open?id=1rlLq4f_T7vGpIzhF4a9cwQlygxmwF7Zv)
+	* get results in folder [`preprocessed-data`](https://drive.google.com/drive/folders/10idPzICLR_OhEZHfGnvgZcqAB1x509mE?usp=sharing)
 	
 	* utilize `glove.840B.300d.txt` from [GloVe](https://nlp.stanford.edu/projects/glove/) to initialize the word-embeddings
 
@@ -40,9 +40,9 @@ We release [all the datasets below](https://drive.google.com/open?id=1vj2pWYZ7s0
 
 We release both classifier and generator models in this work. The models are constructed based on a ***sequence-to-sequence*** architecture. Typically, we use ***GRU*** and ***GNN*** in the encoder and ***GRU*** in the decoder, you can choose other methods (*e.g.* ***Transformer***) which have also been implemented in our repository.
 
-* [classifier](https://drive.google.com/uc?id=18QiTTGwXJ6K-GTVGQS3Bmkv981qrCoA6&export=download): accuracy - 84.06773%
+* [classifier](https://drive.google.com/file/d/1X_fdQgQ1yv15e7QCOXkhbWpYLnoT80mH/view?usp=sharing): accuracy - 84.06773%
 
-* [generator](https://drive.google.com/uc?id=1BwFxjiB4oK48PJOPldRaMSVCn9hofs--&export=download): BLeU-4 - 15.28304
+* [generator](https://drive.google.com/file/d/1Fck0qVYNnLLz3f815CinRfWFrO2ceIfI/view?usp=sharing): BLeU-4 - 15.28304
 
 ## Training
 
