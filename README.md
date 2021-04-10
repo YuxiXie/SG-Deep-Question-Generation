@@ -32,7 +32,7 @@ We release [all the datasets below](https://drive.google.com/drive/folders/1uPQa
 
 3. run [`scripts/preprocess_data.sh`](https://github.com/YuxiXie/SG-Deep-Question-Generation/blob/master/scripts/preprocess_data.sh) to get the preprocessed data ready for training
 
-	* get results in folder [`preprocessed-data`](https://drive.google.com/drive/folders/10idPzICLR_OhEZHfGnvgZcqAB1x509mE?usp=sharing)
+	* get results in folder [`preprocessed-data`](https://drive.google.com/drive/folders/1ZvMRDtb5EeEaylEC-pKSLID0COArJ6Nf?usp=sharing)
 	
 	* utilize `glove.840B.300d.txt` from [GloVe](https://nlp.stanford.edu/projects/glove/) to initialize the word-embeddings
 
