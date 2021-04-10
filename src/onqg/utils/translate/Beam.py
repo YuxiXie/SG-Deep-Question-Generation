@@ -83,7 +83,7 @@ class Beam():
 
         # bestScoresId is flattened as a (beam x word) array,
         # so we need to calculate which word and beam each score came from
-        prev_k = best_scores_id / num_words
+        prev_k = best_scores_id // num_words
         predict = best_scores_id - prev_k * num_words
         if self.copy:
             is_copy = predict.ge(torch.LongTensor(self.size).fill_(raw_num_words).to(self.device)).long()
