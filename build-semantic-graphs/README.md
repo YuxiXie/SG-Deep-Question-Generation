@@ -11,6 +11,19 @@ The 3 crucial parts of this method is:
 
 ---
 
+* Requirement
+
+    ```
+    allennlp==0.9.0
+    overrides==3.1.0
+    ```
+
+* Predictors for dependency parsing and coreference resolution
+
+    - The links to the predictors in our code may not be up-to-date, you may need to check the availability before running the code.
+
+---
+
 To run the codes, execute the commands below:
 
 * Get the raw json files from [HotpotQA](https://hotpotqa.github.io/) [`training set` & `dev set(distractor)`] preprocessed
@@ -21,7 +34,7 @@ To run the codes, execute the commands below:
 
 * Get the results of dependency parsing and coreference resolution
 
-    - To initialize the predictors, you need to download the models of dependency parsing and coreference resoluation, _e.g._, the latest models released from [AllenNLP](https://demo.allennlp.org/).
+    - To initialize the predictors, you need to download the models of dependency parsing and coreference resolution, _e.g._, the latest models released from [AllenNLP](https://demo.allennlp.org/).
 
     ```bash
     python preprocess/get_coref_and_dep_data.py data.train.json data.valid.json dp.json crf_rsltn.json
