@@ -31,7 +31,7 @@ def get_dependency(sent, dependency_parser):
 
 
 def dependency_parse(raw, filename):
-    dependency_parser = Predictor.from_path("dependency_parse/biaffine-dependency-parser-ptb-2018.08.23.tar.gz")
+    dependency_parser = Predictor.from_path("https://s3-us-west-2.amazonaws.com/allennlp/models/biaffine-dependency-parser-ptb-2018.08.23.tar.gz")
     context = {
         key: [
             get_dependency(sent, dependency_parser) for sent in value
@@ -93,7 +93,7 @@ def get_coreference(doc, coref_reslt, pronouns, title):
 def coreference_resolution(raw, filename):
     pronouns = ['it', 'its', 'he', 'him', 'his', 'she', 'her', 'they', 'their', 'them']
     raw = {k: '\t'.join(v) for k,v in raw.items()}
-    coref_reslt = Predictor.from_path("coreference_resolution/coref-model-2018.02.05.tar.gz")
+    coref_reslt = Predictor.from_path("https://s3-us-west-2.amazonaws.com/allennlp/models/coref-model-2018.02.05.tar.gz")
     context = {
         key: get_coreference(value, coref_reslt, pronouns, key) for key, value in tqdm(raw.items(), desc='  - (crf for evidence) ')
     }
@@ -110,7 +110,7 @@ def get_ner(doc, ner_tagger):
 
 
 def ner_tag(raw, filename):
-    ner_tagger = Predictor.from_path("ner_tag/ner-model-2018.12.18.tar.gz")
+    ner_tagger = Predictor.from_path("https://s3-us-west-2.amazonaws.com/allennlp/models/ner-model-2018.12.18.tar.gz")
     raw = [[d[0], d[0]] for d in raw]    #raw = [[d[0], '\t'.join(d[1])] for d in raw]
     context = {sample[0]: get_ner(sample[1], ner_tagger) for sample in tqdm(raw, desc='  - (ner for evidence) ')}
     json_dump(context, filename)
@@ -129,7 +129,7 @@ def sr_labeling(sent, sr_labeler):
 
 
 def semantic_role_labeling(raw, filename):
-    sr_labeler = Predictor.from_path("semantic_role_label/srl-model-2018.05.25.tar.gz")
+    sr_labeler = Predictor.from_path("https://s3-us-west-2.amazonaws.com/allennlp/models/srl-model-2018.05.25.tar.gz")
     context = {sample[0]: [sr_labeling(sent, sr_labeler) for sent in sample[1]] for sample in tqdm(raw, desc='   - (Semantic Role Labeling: 1st) -   ')}
     json_dump(context, filename)
 
