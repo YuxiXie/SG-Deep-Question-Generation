@@ -92,7 +92,7 @@ def get_coreference(doc, coref_reslt, pronouns, title):
 
 def coreference_resolution(raw, filename):
     pronouns = ['it', 'its', 'he', 'him', 'his', 'she', 'her', 'they', 'their', 'them']
-    raw = {d[0]: '\t'.join(d[1]) for d in raw}
+    raw = {k: '\t'.join(v) for k,v in raw.items()}
     coref_reslt = Predictor.from_path("coreference_resolution/coref-model-2018.02.05.tar.gz")
     context = {
         key: get_coreference(value, coref_reslt, pronouns, key) for key, value in tqdm(raw.items(), desc='  - (crf for evidence) ')
